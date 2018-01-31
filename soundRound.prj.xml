@@ -1,0 +1,399 @@
+<TaskerData sr="" dvi="1" tv="4.9u3m">
+	<dmetric>1080.0,1920.0</dmetric>
+	<Project sr="proj0" ve="2">
+		<cdate>1505023013647</cdate>
+		<name>soundRound</name>
+		<scenes>sound-round</scenes>
+		<tids>116,107,109,37,79,108</tids>
+	</Project>
+	<Scene sr="scenesound-round">
+		<cdate>1505020788843</cdate>
+		<edate>1505204847460</edate>
+		<gridSize>40</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>1200</heightPort>
+		<nme>sound-round</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>800</widthPort>
+		<WebElement sr="elements0" ve="2">
+			<flags>4</flags>
+			<geom>0,0,800,1040,236,428,228,380</geom>
+			<Str sr="arg0" ve="3">sound_round</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">%SOUND_ROUND_ROOT_PATH/soundRound.html</Str>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="1"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</WebElement>
+		<TextElement sr="elements1" ve="3">
+			<clickTask>107</clickTask>
+			<flags>4</flags>
+			<geom>750,1120,50,62,270,378,270,432</geom>
+			<Str sr="arg0" ve="3">exit</Str>
+			<Str sr="arg1" ve="3">x</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="2"/>
+			<Str sr="arg2" ve="3">%SOUND_ROUND_COLOR</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">潮汐</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Task sr="task107">
+		<cdate>1505021985041</cdate>
+		<edate>1505021985041</edate>
+		<id>107</id>
+		<pri>9</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">sound-round-exit</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task108">
+		<cdate>1505023041525</cdate>
+		<edate>1505204649842</edate>
+		<id>108</id>
+		<nme>sound-round-play</nme>
+		<Action sr="act0" ve="7">
+			<code>445</code>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="3"/>
+			<Int sr="arg4" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task109">
+		<cdate>1505023771923</cdate>
+		<edate>1505204926606</edate>
+		<id>109</id>
+		<nme>sound-round-init</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>配置根路径</label>
+			<Str sr="arg0" ve="3">%SOUND_ROUND_ROOT_PATH</Str>
+			<Str sr="arg1" ve="3">/storage/sdcard1/software_me/tasker/soundRound</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>配置样式风格[trans,color]</label>
+			<Str sr="arg0" ve="3">%SOUND_ROUND_STYLE</Str>
+			<Str sr="arg1" ve="3">color</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<label>配置环境音数据</label>
+			<Str sr="arg0" ve="3">%scene_confs</Str>
+			<Str sr="arg1" ve="3">{name: "RainyMood", sound: "RainyMood.mp3"},
+{name: "rownRain", sound: "soundrown_rain.mp3"},
+{name: "冥想", sound: "meditation.ogg"},
+{name: "sleepWaves", sound: "sleepto_Waves.mp3"},
+{name: "rownBird", sound: "soundrown_bird.mp3"},
+{name: "rownNight", sound: "soundrown_night.mp3"},
+{name: "海洋", sound: "ocean.ogg"},
+{name: "雨天", sound: "rain.ogg"},
+{name: "森林", sound: "forest.ogg"},
+{name: "咖啡", sound: "coffee.ogg"}</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>410</code>
+			<Str sr="arg0" ve="3">%SOUND_ROUND_ROOT_PATH/soundRound.html</Str>
+			<Str sr="arg1" ve="3">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Swiper demo&lt;/title&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"&gt;
+
+    &lt;!-- Link Swiper's CSS --&gt;
+    &lt;link rel="stylesheet" href="%SOUND_ROUND_ROOT_PATH/swiper-3.4.2.min.css"&gt;
+
+    &lt;!-- Demo styles --&gt;
+    &lt;style&gt;
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        font-family: Helvetica;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Swiper --&gt;
+    &lt;div class="swiper-container"&gt;
+        &lt;div class="swiper-wrapper"&gt;
+        &lt;/div&gt;
+        &lt;!-- Add Pagination --&gt;
+        &lt;div class="swiper-pagination"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Swiper JS --&gt;
+	&lt;script type="text/javascript" src="%SOUND_ROUND_ROOT_PATH/jquery-3.2.1.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="%SOUND_ROUND_ROOT_PATH/swiper-3.4.2.jquery.min.js"&gt;&lt;/script&gt;
+
+    &lt;!-- Initialize Swiper --&gt;
+    &lt;script&gt;
+	var isPlaying = false;
+	var scenes = [
+		%scene_confs
+	];
+	for (var i=0; i &lt; scenes.length; i++) {
+		var scene = scenes[i];
+		$(".swiper-wrapper").append("&lt;div class='swiper-slide'&gt;&lt;canvas id='scene" 
+									+ i + "' width='280' height='280' onclick='playSceneSound(\"" 
+									+ scene.sound + "\")'&gt;&lt;/div&gt;");
+		drawScene("scene" + i, scene.name);
+	}
+	function drawScene(scene, name) {
+		var bg = document.getElementById(scene);
+		var ctx = bg.getContext('2d');
+		ctx.beginPath();
+		ctx.arc(140, 140, 130, 0*Math.PI, 2*Math.PI, false);
+		ctx.lineWidth = 5;
+		ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)';
+		ctx.stroke();
+		ctx.font = "40px SimSun";
+		ctx.fillStyle = "#FFFFFF";
+		ctx.textAlign="center";
+		ctx.fillText(name, 140, 155);
+	}
+
+    var swiper = new Swiper('.swiper-container', {
+		direction: 'horizontal',
+        pagination: '.swiper-pagination',
+        paginationClickable: false,
+		onSlideChangeStart: function(swiper){
+		}
+    });
+	function playSceneSound(sound) {
+		if (isPlaying) {
+			swiper.enableTouchControl();
+			musicStop();
+			isPlaying = false;
+		} else {
+			swiper.disableTouchControl();
+			performTask("sound-round-play", 5, "%SOUND_ROUND_ROOT_PATH/sound/" + sound);
+			isPlaying = true;
+		}
+	}
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task116">
+		<cdate>1505023041525</cdate>
+		<edate>1505204901580</edate>
+		<id>116</id>
+		<nme>sound-round-exit</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>449</code>
+			<se>false</se>
+			<Int sr="arg0" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">sound-round</Str>
+		</Action>
+	</Task>
+	<Task sr="task37">
+		<cdate>1505020753233</cdate>
+		<edate>1505204904358</edate>
+		<id>37</id>
+		<nme>sound-round</nme>
+		<pri>7</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">sound-round-init</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%SOUND_ROUND_ROOT_PATH</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>194</code>
+			<Str sr="arg0" ve="3">sound-round</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">%is_scene_exist</Str>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%is_scene_exist</lhs>
+					<op>0</op>
+					<rhs>uncreated</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">sound-round</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">sound-round-exit</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>38</code>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hd_av_play_over_video</nme>
+		</Img>
+	</Task>
+	<Task sr="task79">
+		<cdate>1505139721602</cdate>
+		<edate>1505204898789</edate>
+		<id>79</id>
+		<nme>sound-round-color</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>设置透明背景色</label>
+			<Str sr="arg0" ve="3">%SOUND_ROUND_COLOR</Str>
+			<Str sr="arg1" ve="3">#33FFFFFF</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%SOUND_ROUND_STYLE</lhs>
+					<op>0</op>
+					<rhs>trans</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>动态设置背景色[B3代表透明的0.7]</label>
+			<Str sr="arg0" ve="3">%SOUND_ROUND_COLOR</Str>
+			<Str sr="arg1" ve="3">#B3%WALLPAPER_COLOR_HEX</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%SOUND_ROUND_STYLE</lhs>
+					<op>0</op>
+					<rhs>color</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+</TaskerData>
